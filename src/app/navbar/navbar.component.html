@@ -1,0 +1,31 @@
+<nav class="navbar">
+  <div class="logo">MyApp</div>
+  <ul class="menu desktop-menu">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href = '/assets/Image.png' class = "btn btn-primary" download> 
+      <i class = "uil uil-download-alt"></i>Download CV</a></li>
+  </ul>
+ 
+  <div class="hamburger" (click)="toggleNavbar()">
+    <button id="closeHamburgerIcon" *ngIf="isNavbarOpen">
+      <i class="uil uil-multiply"></i>
+    </button>
+    <!-- <button id = "openHamburgerIcon"><i class = "uil uil-bars"></i></button> -->
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div class="menu mobile-menu" [class.active]="isNavbarOpen">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href = '/assets/Image.png' class = "btn btn-primary" download> 
+        <i class = "uil uil-download-alt"></i>Download CV</a></li>
+    </ul>
+  </div>
+</nav>
